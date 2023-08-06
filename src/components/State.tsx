@@ -8,8 +8,8 @@ export default function State() {
           eiusmod <br /> tempor incididunt ut labore
         </h3>
       </div>
-      <div className="hidden">
-        <div className="stats bg-transparent">
+      <div className="">
+        <div className="stats bg-transparent md:flex block">
           <div className="stat place-items-center">
             <div className="stat-title">Sales</div>
             <div className="stat-value">31K Tons</div>
