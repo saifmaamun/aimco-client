@@ -1,15 +1,15 @@
 export default function State() {
   return (
     <div className="py-20">
-      <div className="my-16">
+      <div className="my-16 px-2">
         <h1 className="text-5xl mb-8">You’re in good company</h1>
-        <h3 className="text-4xl text-slate-500">
+        <h3 className="xlg:text-4xl text-lg text-slate-500 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod <br /> tempor incididunt ut labore
         </h3>
       </div>
-      <div>
-        <div className="stats bg-transparent ">
+      <div className="hidden">
+        <div className="stats bg-transparent">
           <div className="stat place-items-center">
             <div className="stat-title">Sales</div>
             <div className="stat-value">31K Tons</div>
