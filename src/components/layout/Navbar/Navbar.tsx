@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div className="navbar mt-5 bg-white">
+    <div className="navbar  font-light mt-5 md:text-sm bg-white">
       <div className="">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,42 +24,66 @@ export default function Navbar() {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <Link className="" to="/">
+                Who we are
+              </Link>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <Link className="" to="/">
+                What we do
+              </Link>
             </li>
             <li>
-              <a>Item 3</a>
+              <Link className="" to="/">
+                Sustainability
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/">
+                Partnering with us
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/about">
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link className="" to="/contact">
+                Conact Us
+              </Link>
             </li>
           </ul>
         </div>
-        <button className="btn ms-20 me-10 rounded-none">
+        <button className="btn ms-20 me-10 hidden md:block md:ms-0 rounded-none">
           <img src={search}></img>
         </button>
       </div>
-      <div className="navbar hidden gap-9  lg:flex">
-        <Link to="/"> Who we are</Link>
-        <Link to="/"> What we do</Link>
-        <Link to="/"> Sustainability</Link>
-        <Link to="/"> Partnering with us</Link>
-        <Link to="/"> Investors</Link>
-        <Link to="/"> Careers</Link>
-        <Link to="/about"> About</Link>
-        <Link to="/contact">Contact</Link>
+      <div className="navbar hidden gap-9 lg:gap-7  font-light md:text-sm   lg:flex">
+        <Link className="" to="/">
+          Who we are
+        </Link>
+        <Link className="" to="/">
+          What we do
+        </Link>
+        <Link className="" to="/">
+          Sustainability
+        </Link>
+        <Link className="" to="/">
+          Partnering with us
+        </Link>
+
+        <Link className="" to="/about">
+          About Us
+        </Link>
+        <Link className="" to="/contact">
+          Contact Us
+        </Link>
       </div>
-      <div className="navbar-end me-9">
+      <div className="navbar-end  me-9 ms-auto me-9">
         <Link to="/">Aimco</Link>
       </div>
     </div>
